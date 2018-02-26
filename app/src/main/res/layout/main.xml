@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/c"
+    tools:context="com.example.vishal.prac.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="toppings"
+        android:layout_margin="16dp"
+        android:textAllCaps="true"
+        android:id="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textquan"
+        android:layout_alignStart="@+id/textquan"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="9dp"
+        android:buttonTint="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/check"
+        android:text="Whipped Cream"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="24dp"/>
+
+    <TextView
+        android:id="@+id/textquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/check"
+        android:layout_marginTop="16dp"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:textColor="#fff" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textquan"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="16dp">
+
+        <Button
+        android:id="@+id/minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="decrement"
+        android:text="-" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/textquan"
+        android:layout_marginLeft="8dp"
+        android:textColor="#fff"
+        android:id="@+id/quantity"
+        android:textSize="16sp"/>
+
+        <Button
+        android:id="@+id/plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:onClick="increment"
+        android:text="+" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_summary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textquan"
+        android:layout_alignStart="@+id/textquan"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="16dp"
+        android:text="order summary"
+        android:textAllCaps="true"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/order_summary_text"
+        android:layout_alignStart="@+id/order_summary_text"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/order_summary_text"
+        android:text="0"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:onClick="submitOrder"
+        android:padding="2dp"
+        android:text="order" />
+
+</RelativeLayout>

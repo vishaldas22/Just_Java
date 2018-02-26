@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">শুধু জাভা</string>
+
+    <!--XML translations-->
+    <string name="toppin">শুধু জাভা</string>
+    <string name="whip_cream">বেত্রাঘাত ক্রিম</string>
+    <string name="choco">চকলেট</string>
+    <string name="quan">পরিমাণ</string>
+    <string name="order">ক্রম</string>
+    <string name="name">নাম</string>
+
+    <!--Java translations-->
+    <string name="thank_you">ধন্যবাদ</string>
+    <string name="order_summary_name">নাম: <xliff:g id="name" example="Bishal">%s</xliff:g></string>
+    <string name="adWhCr">চাবুক ক্রিম এখনো যোগ করেনি<xliff:g id="hasWc" example="yes">%b</xliff:g></string>
+    <string name="adCh">চকলেট এখনো যোগ করেনি<xliff:g id="hasCh" example="no">%b</xliff:g></string>
+    <string name="quant">পরিমাণ: <xliff:g id="quantity" example="5">%d</xliff:g></string>
+    <string name="total">মোট: $<xliff:g id="price" example="500">%d</xliff:g></string>
+    <string name="place_order">জন্য প্র্যাক আদেশ<xliff:g id="name" example="Bishal">%s</xliff:g></string>
+    <string name="one">1</string>
+
+</resources>

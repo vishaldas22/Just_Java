@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/c"
+    tools:context="com.example.vishal.prac.MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#fff"
+        android:hint="@string/name"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:inputType="textCapWords"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/toppin"
+        android:layout_below="@+id/name"
+        android:layout_margin="16dp"
+        android:textAllCaps="true"
+        android:id="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textquan"
+        android:layout_alignStart="@+id/textquan"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="9dp"
+        android:buttonTint="#fff"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/whip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/check"
+        android:text="@string/whip_cream"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="24dp"/>
+
+    <CheckBox
+        android:id="@+id/choco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textquan"
+        android:layout_alignStart="@+id/textquan"
+        android:layout_below="@+id/check"
+        android:layout_marginLeft="9dp"
+        android:buttonTint="#fff"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/choc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/check"
+        android:text="@string/choco"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@+id/whip"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="24dp"/>
+
+    <TextView
+        android:id="@+id/textquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/choco"
+        android:layout_marginTop="16dp"
+        android:text="@string/quan"
+        android:textAllCaps="true"
+        android:textColor="#fff" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textquan"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:backgroundTint="#424242"
+            android:onClick="decrement"
+            android:text="-"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textquan"
+            android:layout_marginLeft="8dp"
+            android:text="@string/one"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="#424242"
+            android:onClick="increment"
+            android:text="+"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/padd"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_margin="15dp"
+        android:backgroundTint="#424242"
+        android:onClick="submitOrder"
+        android:padding="20dp"
+        android:text="@string/order"
+        android:textColor="#fff" />
+
+</RelativeLayout>
